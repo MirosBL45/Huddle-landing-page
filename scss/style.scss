@@ -1,0 +1,211 @@
+@import 'config';
+
+//CSS rules to specify families
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.huddle {
+	background: url('/images/bg-hero-desktop.svg'), $pozadina;
+	font-family: 'Poppins', sans-serif;
+	height: 600px;
+
+	.nav {
+		padding-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.build {
+		padding-top: 50px;
+		display: flex;
+
+		.hpb {
+			flex-basis: 50%;
+			padding-top: 70px;
+
+			h1 {
+				padding-right: 13vw;
+			}
+
+			p {
+				margin-top: 20px;
+				padding-right: 8vw;
+				font-weight: 500;
+			}
+		}
+
+		.mock {
+			flex-basis: 50%;
+		}
+	}
+}
+
+.trio {
+	margin-top: 100px;
+	font-family: 'Poppins', sans-serif;
+
+	[class^="box"] {
+		display: flex;
+		margin: 25px auto;
+		border-radius: 15px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+		p {
+			margin-top: 10px;
+			color: $grayish_blue;
+			line-height: 1.4;
+		}
+	}
+
+	.boxout .words {
+		flex-basis: 55%;
+		padding: 8vw 7vw 8vw 8vw;
+	}
+
+	.boxout .art {
+		flex-basis: 45%;
+		padding: 40px 2vw 30px 8vw;
+	}
+
+	.boxin .art {
+		flex-basis: 55%;
+		padding: 40px 7vw 30px 8vw;
+	}
+
+	.boxin .words {
+		flex-basis: 45%;
+		padding: 8vw 2vw 8vw 8vw;
+	}
+}
+
+.bottom {
+	margin-top: 300px;
+	font-family: 'Poppins', sans-serif;
+	background: $very_dark_cyan;
+	color: white;
+
+	.ready {
+		color: $very_dark_cyan;
+		background: white;
+		text-align: center;
+		width: 50%;
+		padding: 4vw 20px;
+		position: absolute;
+		border-radius: 15px;
+		bottom: 400px;
+		left: 50%;
+		transform: translate(-50%);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.logo {
+		padding-top: 100px;
+		padding-left: 20px;
+	}
+
+	.black {
+		display: flex;
+
+		.info {
+			flex-basis: 40%;
+			margin: 10px;
+			padding: 20px;
+
+			.lophom:first-child {
+				align-items: flex-start;
+			}
+
+			.lophom {
+				padding-bottom: 20px;
+				display: flex;
+				align-items: center;
+
+				img {
+					flex-basis: 3%;
+				}
+
+				p {
+					padding-left: 20px;
+					flex-basis: 97%;
+				}
+			}
+		}
+
+		.faq1,
+		.faq2 {
+			flex-basis: 15%;
+			margin: 10px 10px 0 10px;
+			padding: 20px 20px 0 20px;
+
+			p {
+				padding-bottom: 25px;
+			}
+
+			p:last-child {
+				padding-bottom: 0;
+			}
+
+			a {
+				color: white;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.icoco {
+			flex-basis: 30%;
+			margin: 10px;
+			padding: 20px 0 40px 40px;
+			display: flex;
+			height: 300px;
+			flex-wrap: wrap;
+			align-content: space-between;
+
+			.icons {
+				display: flex;
+
+				a {
+					padding-right: 20px;
+				}
+
+				a.last {
+					padding-right: 0;
+				}
+
+				.social-media {
+					fill: white;
+					transition: 0.35s;
+				}
+
+				.social-media:hover {
+					fill: $pink;
+				}
+			}
+
+			.copy {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';

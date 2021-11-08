@@ -1,0 +1,27 @@
+//boje
+$pink: hsl(322, 100%, 66%);
+$very_pale_cyan: hsl(193, 100%, 96%);
+$very_dark_cyan: hsl(192, 100%, 9%);
+$grayish_blue: hsl(208, 11%, 55%);
+$pozadina: hsl(208, 58%, 94%);
+$ivica: hsl(322, 100%, 65%);
+$hover2: hsl(322, 100%, 80%);
+
+.close {
+	background: $pink;
+	padding: 10px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: white;
+}
+.attribution a {
+	color: white;
+}
+
+.attribution a:hover {
+	text-decoration: underline;
+}

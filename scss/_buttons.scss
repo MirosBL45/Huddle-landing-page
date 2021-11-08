@@ -1,0 +1,44 @@
+%btn {
+	display: inline-block;
+	border-radius: 35px;
+	transition: 0.35s;
+}
+
+.first-btn {
+	@extend %btn;
+	font-weight: 600;
+	padding: 10px 60px;
+	color: $very_dark_cyan;
+	background: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.second-btn {
+	@extend %btn;
+	color: white;
+	background: $pink;
+	margin-top: 30px;
+	padding: 15px 70px;
+	font-weight: 400;
+	border: 2px solid $ivica;
+}
+
+.third-btn {
+	@extend %btn;
+	color: white;
+	background: $pink;
+	margin-top: 30px;
+	padding: 15px 70px;
+	font-weight: 500;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+	border: 2px solid $ivica;
+}
+
+.first-btn:hover {
+	color: rgb(170, 169, 169);
+}
+
+.second-btn:hover, .third-btn:hover {
+	background: $hover2;
+	border: 2px solid $hover2;
+}

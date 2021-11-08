@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+	.huddle {
+		// background-size: auto 900px;
+		height: 700px;
+
+		.mock {
+			display: flex;
+			align-items: center;
+		}
+	}
+	.bottom .ready {
+		width: 90%;
+		bottom: 450px;
+
+		.third-btn {
+			padding: 13px 20px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.huddle {
+		background: url('/images/bg-hero-mobile.svg'), $pozadina;
+		height: 1000px;
+		text-align: center;
+
+		.nav {
+			.logo img {
+				width: 80%;
+			}
+
+			.try .first-btn {
+				padding: 10px 50px;
+			}
+		}
+
+		.build {
+			flex-direction: column;
+
+			.hpb h1,
+			p {
+				padding: 0 40px;
+			}
+
+			.hpb .second-btn {
+				margin: 30px auto 60px auto;
+			}
+		}
+	}
+
+	.trio {
+		[class^="box"] {
+			text-align: center;
+
+			[class^="word"] {
+				padding-right: 8vw;
+			}
+		}
+
+		.boxout {
+			flex-direction: column-reverse;
+		}
+
+		.boxin {
+			flex-direction: column;
+		}
+	}
+
+	.bottom {
+		.ready {
+			width: 80%;
+			bottom: 800px;
+		}
+
+		.black {
+			flex-direction: column;
+
+			.icoco {
+				display: block;
+				text-align: center;
+				padding-left: 0;
+
+				.icons {
+					justify-content: center;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.huddle {
+		height: 1010px;
+
+		.nav {
+			.logo {
+				flex-basis: 50%;
+			}
+
+			.try {
+				flex-basis: 50%;
+
+				.first-btn {
+					padding: 8px 18px;
+				}
+			}
+		}
+	}
+
+	.bottom .ready {
+		width: 90%;
+		bottom: 900px;
+
+		.third-btn {
+			padding: 13px 20px;
+		}
+	}
+}
